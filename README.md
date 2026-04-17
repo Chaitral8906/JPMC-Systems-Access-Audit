@@ -1,37 +1,97 @@
-# JPMC-Systems-Access-Audit
-Simulated Access &amp; Entitlements Audit using the Amazon Employee Access Dataset to identify RBAC misalignments.
-# Project: Global Banking Systems Access & Entitlement Audit
+# 📁 Systems Access & Entitlement Audit (RBAC Analysis)
 
-### Business Objective
-To support operational excellence and audit readiness by analyzing system entitlement requests. This project identifies high-risk access trends and ensures Role-Based Access Control (RBAC) alignment.
+## 🧩 Project Overview  
+This project simulates a real-world systems access audit to analyze how employee access requests are approved or denied. The goal is to identify patterns that may indicate inefficiencies, inconsistencies, or potential risks in Role-Based Access Control (RBAC).
 
-### Dataset
-* **Source:** Amazon Employee Access Dataset (32,000+ records)
-* **Focus:** Actionable insights into approval/denial patterns for system resources.
+---
 
-### Key Audit Findings
-1. **High-Risk Resource Identification:** Identified System ID 20897 as a high-friction point with a 40% denial rate, suggesting a need for Role Criteria review.
-2. **Departmental Gap Analysis:** Found that Department 118992 had a significantly lower success rate (62.6%) compared to the firm average, indicating potential RBAC misconfiguration.
-3. **Managerial Oversight:** Isolated specific managers (e.g., MGR_ID 54618) with nearly 50% denial rates, identifying a need for updated training on access provisioning policies.
+## 🎯 Business Objective  
+To support operational efficiency and audit readiness by:
+- Analyzing access request trends  
+- Identifying high-risk systems and departments  
+- Highlighting inconsistencies in approval decisions  
 
-### Technical Skills Demonstrated
-* **SQL Logic:** Advanced aggregation (`GROUP BY`), conditional logic (`CASE WHEN`), and precision math (`DECIMAL` casting).
-* **Risk Mitigation:** Identifying "Least Privilege" violations and Segregation of Duties (SoD) risks.
+---
 
-## Audit Methodology & Evidence
+## 📊 Dataset  
+- Source: Amazon Employee Access Dataset  
+- Size: 32,000+ records  
+- Focus: Employee access requests and approval/denial outcomes  
 
-### 1. Resource Friction Analysis
-*Pinpointing specific systems with high denial rates to investigate potential RBAC misalignments.*
+> Note: Dataset not included due to size. Public dataset used.
+
+---
+
+## 🔍 Key Findings  
+
+- Identified a system (ID: 20897) with ~40% access denial rate, indicating possible mismatch in role-based access criteria  
+
+- Found that Department 118992 had a lower approval rate (~62.6%) compared to the overall average, suggesting potential access configuration issues  
+
+- Observed certain managers (e.g., Manager ID: 54618) with high denial rates (~50%), highlighting inconsistency in approval patterns  
+
+---
+
+## 🛠️ My Approach  
+
+- Explored the dataset using SQL to understand access request patterns  
+- Used GROUP BY and aggregation to analyze approval and denial trends  
+- Applied CASE WHEN logic to interpret outcomes and categorize results  
+- Analyzed patterns across systems, departments, and managers  
+- Interpreted findings from an audit and risk perspective  
+
+---
+
+## 📊 Visual Insights  
+
+### 🔹 Resource Access Risk  
 ![Resource Audit](resource_audit.png)
 
-### 2. Departmental Performance Metrics
-*Tracking the success rate of access requests to identify business units needing role-criteria updates.*
-![Department Audit](department_success_audit.png)
+### 🔹 Department Success Rates  
+![Department Analysis](department_success_audit.png)
 
-### 3. Managerial Oversight Trends
-*Isolating managers with high team-denial rates for targeted policy training and support.*
-![Manager Audit](manager_denial_rates.png)
+### 🔹 Manager Denial Patterns  
+![Manager Analysis](manager_denial_rates.png)
 
-### 4. Role Code Consistency Check
-*Analyzing specific roles that exhibit both high approval and high denial rates to identify "Stale Access" risks.*
-![Role Audit](role_code_inconsistency.png)
+### 🔹 Role Code Inconsistency  
+![Role Issues](role_code_inconsistency.png)
+
+---
+
+## 💡 Business Impact  
+
+- Helps improve access control policies  
+- Supports audit and compliance processes  
+- Identifies areas for role and permission optimization  
+- Reduces risk of unauthorized or inefficient access  
+
+---
+
+## ⚙️ Tools & Skills Used  
+
+- SQL (Aggregation, Conditional Logic, Data Analysis)  
+- Data Interpretation  
+- Risk & Audit Thinking  
+- Attention to Detail  
+
+---
+
+## 📂 Project Structure  
+
+- access_audit_queries.sql – SQL queries used for analysis  
+- *.png – Visual insights from analysis  
+- README.md – Project documentation  
+
+---
+
+## ✅ Conclusion  
+
+This analysis highlights how access control patterns can reveal inefficiencies in role-based systems. By identifying high denial rates and inconsistencies, organizations can improve access policies, reduce risk, and strengthen audit readiness.
+
+---
+
+## 📌 Note  
+This is a simulated project created for learning purposes using a publicly available dataset.
+
+
+
