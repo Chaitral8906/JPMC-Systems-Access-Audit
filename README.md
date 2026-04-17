@@ -22,7 +22,7 @@ To support operational excellence and audit readiness by analyzing system entitl
 
 ### 1. Resource Friction Analysis
 *Pinpointing specific systems with high denial rates to investigate potential RBAC misalignments.*
-![Resource Audit](resource_denial_audit.png)
+![Resource Audit](resource_audit.png)
 
 ### 2. Departmental Performance Metrics
 *Tracking the success rate of access requests to identify business units needing role-criteria updates.*
