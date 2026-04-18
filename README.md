@@ -1,15 +1,16 @@
-# 📁 Systems Access & Entitlement Audit (RBAC Analysis)
+# 📁 Systems Access & Entitlement Analysis (RBAC)
 
 ## 🧩 Project Overview  
-This project simulates a real-world systems access audit to analyze how employee access requests are approved or denied. The goal is to identify patterns that may indicate inefficiencies, inconsistencies, or potential risks in Role-Based Access Control (RBAC).
+This project explores how access requests are approved or denied in a system using Role-Based Access Control (RBAC). The aim was to understand patterns in access decisions and identify possible inconsistencies.
 
 ---
 
 ## 🎯 Business Objective  
-To support operational efficiency and audit readiness by:
-- Analyzing access request trends  
-- Identifying high-risk systems and departments  
-- Highlighting inconsistencies in approval decisions  
+- To analyze access request data and:
+
+• Identify trends in approvals and denials
+• Highlight departments or roles with higher rejection rates
+• Observe patterns that may indicate inconsistencies in decision-making
 
 ---
 
@@ -38,7 +39,7 @@ To support operational efficiency and audit readiness by:
 - Used GROUP BY and aggregation to analyze approval and denial trends  
 - Applied CASE WHEN logic to interpret outcomes and categorize results  
 - Analyzed patterns across systems, departments, and managers  
-- Interpreted findings from an audit and risk perspective  
+- Interpreted findings to understand potential risks and inconsistencies
 
 ---
 
@@ -86,7 +87,7 @@ To support operational efficiency and audit readiness by:
 
 ## ✅ Conclusion  
 
-This analysis highlights how access control patterns can reveal inefficiencies in role-based systems. By identifying high denial rates and inconsistencies, organizations can improve access policies, reduce risk, and strengthen audit readiness.
+This analysis highlights how access control patterns can reveal inefficiencies in role-based systems. By identifying high denial rates and inconsistencies, organizations can improve access policies, reduce risk, and support better access control decisions.
 
 ---
 
